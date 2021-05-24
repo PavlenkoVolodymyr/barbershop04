@@ -1,0 +1,92 @@
+:root {
+  --accent-color: #99baed;
+  --text-color: rgba(22, 53, 97, 1);
+  --white: whitesmoke;
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.container {
+  width: 1920px;
+  margin: 0 auto;
+}
+.header .container {
+  padding-left: 170px;
+  padding-right: 213px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.336;
+  color: var(--accent-color);
+  margin-top: 59px;
+  margin-right: 110px;
+  position: relative;
+}
+.logo::before {
+  position: absolute;
+  content: '';
+  width: 74px;
+  height: 66px;
+  bottom: 12px;
+  left: -52px;
+  background-image: url(../images/scissors.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.navList {
+  display: flex;
+}
+.navList li:not(:last-child) {
+  margin-right: 20px;
+}
+.navList a {
+  font-size: 25px;
+  line-height: 1.336;
+  text-transform: capitalize;
+  padding: 67px 14px 8px;
+}
+.navList a:hover {
+  color: var(--white);
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  transition: all 0.5s ease-out;
+}
+
+.btnList {
+  display: flex;
+  align-items: center;
+  padding-top: 46px;
+  /* padding-bottom: 17px; */
+}
+.btnList li:not(:last-child) {
+  margin-right: 72px;
+}
+.btnList button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.btnList .appoint {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.506;
+  letter-spacing: 0.03em;
+  padding: 23px 32px;
+  color: var(--white);
+  background-color: var(--accent-color);
+  border-radius: 20px;
+}
+.btnList .appoint:hover {
+  box-shadow: 0 10px 50px var(--accent-color);
+  transition: all 0.5s ease-out;
+}
